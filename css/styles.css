@@ -1,5 +1,95 @@
-body, header, nav, main, footer, h1, div, img, ul {
+body, header, nav, main, footer, h1, div, img, ul, section {
 	margin: 0;
 	padding: 0;
 	border: 0;
+}
+
+body {
+	background-color:#5C9AB5;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.round {
+	border-radius: 15px;
+	width: 75%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header {
+	top: 0;
+	width: 25%;
+	float: left;
+	padding-bottom: 0;
+}
+
+footer {
+	text-align: center;
+	padding: 0 1em;
+}
+
+nav {
+	float: right;
+	width: 70%;
+	margin: 4em 1em 0 0;
+}
+	
+nav ul {
+	list-style-type: none;
+	text-align: right;
+}
+	
+nav li {
+	display: inline-block;
+	border: none;
+	font-size: 1.75em;
+	font-family: 'Fjalla One';
+}
+	
+nav li a {
+	display: block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	color: #394381;
+}
+
+/*Desktop rules*/
+@media screen and (min-width: 769px),print {
+	
+	main {
+		background-color:#fff;
+		padding: 2%;
+		clear: left;
+		font-family: 'Lato';
+	}
+
+	main h1 {
+		font-size: 2.5em;
+	}
+
+	nav li a:hover {
+		color: #fff;
+		border: 3px solid white; 
+	}
+
+	#transport, #power, #nutrition {
+		margin: 0 2%;
+		width: 29%;
+		float: left;
+		font-size: 1.15em;
+	}
+
+}
+
+@media screen and (min-width: 1921px) {
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+	}	
 }
