@@ -1,4 +1,4 @@
-body, header, nav, main, footer, h1, div, img, ul, section {
+body, header, nav, main, footer, h1, div, img, ul, section, figure, figcaption {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -6,11 +6,13 @@ body, header, nav, main, footer, h1, div, img, ul, section {
 
 body {
 	background-color:#5C9AB5;
+	font-size: 1.15em;
 }
 
 img {
 	max-width: 100%;
 	display: block;
+	border-radius: 7px;
 }
 
 .round {
@@ -24,9 +26,6 @@ img {
 
 header {
 	top: 0;
-	width: 25%;
-	float: left;
-	padding-bottom: 0;
 }
 
 footer {
@@ -35,19 +34,17 @@ footer {
 }
 
 nav {
-	float: right;
-	width: 70%;
-	margin: 4em 1em 0 0;
+	padding: 1%;
+	margin-bottom: 1%;
 }
 	
 nav ul {
 	list-style-type: none;
-	text-align: right;
+	text-align: center;
 }
 	
 nav li {
-	display: inline-block;
-	border: none;
+	border-top: 1px solid #267318;
 	font-size: 1.75em;
 	font-family: 'Fjalla One';
 }
@@ -59,30 +56,149 @@ nav li a {
 	color: #394381;
 }
 
+/*Mobile rules*/
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+main {
+	background-color:#fff;
+	padding: 2%;
+	font-family: 'Lato';
+}
+
+main h2 {
+	text-align: center;
+	font-weight: bold;
+}
+
+main h3 {
+	text-align: center;
+}
+
+main img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 43%;
+}
+
+.frame {
+	position: relative;\
+	margin: 2% auto;
+}
+
+.pic-text {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #90e8a4;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#about {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-radius: 15px;
+	background-color: #f2f2f2;
+	padding: 1% 2%;
+}
+	
+/*Tablet rules*/
+@media screen and (min-width: 630px),print {
+	
+	.tablet-desktop {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 10px;
+	}
+	
+	
+}
+
 /*Desktop rules*/
 @media screen and (min-width: 769px),print {
 	
+	header {
+		width: 25%;
+		float: left;
+		padding-bottom: 0;
+	}
+	
+	nav {
+		float: right;
+		margin: 4em 1em 0 0;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		text-align: right;
+	}
+	
+	nav li {
+		display: inline-block;
+		border: none;
+	}
+	
+	nav li a:hover {
+		color: #fff;
+		border: 3px solid white; 
+	}
+	
 	main {
-		background-color:#fff;
-		padding: 2%;
 		clear: left;
-		font-family: 'Lato';
 	}
 
 	main h1 {
 		font-size: 2.5em;
 	}
-
-	nav li a:hover {
-		color: #fff;
-		border: 3px solid white; 
+	
+	main h4 {
+		text-align: left;
+		font-size: 1.5em;
 	}
 
+	main ul {
+		margin: 0 0 4% 4%;
+	}
+	
+	.frame:hover {
+		box-shadow: 8px 8px 10px #808080;
+	}
+	
+	#about img {
+		width: 25%;
+	}
+	
+	#about1, #about2 {
+		
+	}
+	
 	#transport, #power, #nutrition {
 		margin: 0 2%;
 		width: 29%;
 		float: left;
-		font-size: 1.15em;
+		font-size: 1.05em;
+	}
+	
+	#helpimg {
+		display: inline-block;
+		text-align:center;
 	}
 
 }
