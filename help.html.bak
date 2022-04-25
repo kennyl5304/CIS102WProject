@@ -29,7 +29,7 @@
 			</nav>
 			
 			<div id="hero" class="tablet-desktop">
-				<img src="images/helpers-hero.jpg" alt="people helping with solar energy"/>
+				<!--<img src="images/helpers-hero.jpg" alt="people helping with solar energy"/>-->
 			</div>
 			
 			<main>

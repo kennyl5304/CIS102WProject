@@ -5,6 +5,7 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="images/esicon.ico">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/esicon-32.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="images/globalwarming logo180.png">
@@ -13,19 +14,74 @@
 	<body>
 	
 		<div id="container">
-		<header>
-			<a href="index.html"><img src="images/globalwarming logo.png" alt="EarthShield Logo"/></a>
-		</header>
-		
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a></a></li>
-				<li><a></a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
-		
+			<header>
+				<a href="index.html"><img src="images/earthshieldlogo.png" alt="EarthShield Logo"/></a>
+			</header>
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="help.html">How to Help</a></li>
+					<li><a href="facts.html">Global Warming Facts</a></li>
+					<li><a href="link.html">Links</a></li>
+				</ul>
+			</nav>
+			
+			<div id="hero" class="tablet-desktop">
+				<img>
+			</div>
+			
+			<main>
+				<div>
+					<h1>Welcome to EarthShield</h1>
+					<p>We are a nonprofit website dedicated to spreading awareness about climate change, an issue that's currently plaguing our beloved Earth.</p>
+					<p>Here, you will find some tips on how to live a better, eco-friendly lifestyle, links to official resources, as well as ways you can help stall this ongoing process.</p>
+					<p>Climate change is a real problem which can be scientifically proven. Our planet is heating up at an unnatural pace, and if we continue to stay ignorant about this issue, there may no longer be an Earth for us to inhabit in the near future.</p>
+					<h3>Let us all come together to be the shield that helps our Earth see a brighter future!</h3>
+					
+					<img src="images/earthrotate.gif" alt="Earth Rotating"/>
+					<br />
+					
+					
+					<div class="grid">
+						<figure class="frame">
+							<a href="help.html"><img src="images/ecopower.jpg" alt="ecofriendly power"></a>
+							 <figcaption class="pic-text">How you can Help</figcaption>
+						</figure>
+						
+						<figure class="frame">
+							<a href="facts.html"><img src="images/earthwarm.jpg" alt="global warming"></a>
+							 <figcaption class="pic-text">Climate Change Facts</figcaption>
+						</figure>
+						
+						<figure class="frame">
+							<a href="link.html"><img src="images/grey-connected-earth.jpg" alt="earth being connected"></a>
+							 <figcaption class="pic-text">Other Resources</figcaption>
+						</figure>
+					</div>
+					<br />
+					
+					
+					<h2>About the Webmasters</h2>
+					<section id="about" class="grid">
+						<section id="about1">
+							<h3>yo</h3>
+							<img src="images/webmaster1.jpg" alt="a basic weemo"/>
+							<p>Hey, I'm Kenny. I'm currently a freshman studying Computer Science. I've been delving in HTML, JavaScript, and CSS for 3 years now, and I believe it's now time to use those skills to push forward a cause I believe in. In my free time, I play video games and practice playing music. For more information, feel free to check out my <a href="https://kennyluongest.blogspot.com/">blog!</a></p>
+						</section>
+						
+						<section id="about2">
+							<h3>ahhhh</h3>
+							<p>also human also human also human also human also human also human also human also human also human also human also human also human also human also human also human also human also human also human also human </p>
+						</section>
+					</section>
+				</div>
+			</main>
+			
+			<footer>
+				<p>&#169; Copyright 2022. All Rights Reserved.</p>
+			</footer>
+		</div>
 	</body>
 </html>
