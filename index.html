@@ -1,87 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>EarthShield</title>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/styles.css">
-		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato&display=swap" rel="stylesheet">
-		<link rel="shortcut icon" href="images/esicon.ico">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/esicon-32.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/globalwarming logo180.png">
-		<link rel="icon" sizes="192x192" href="images/globalwarming logo.png">
-	</head>
-	<body>
-	
-		<div id="container">
-			<header>
-				<a href="index.html"><img src="images/earthshieldlogo.png" alt="EarthShield Logo"/></a>
-			</header>
-			
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#about">About Us</a></li>
-					<li><a href="help.html">How to Help</a></li>
-					<li><a href="facts.html">Global Warming Facts</a></li>
-					<li><a href="link.html">Links</a></li>
-				</ul>
-			</nav>
-			
-			<div id="hero" class="tablet-desktop">
-				<img src="images/heroimgplaceholder.jpg" alt="hand holding melting earth"/>
+
+<head>
+	<title>EarthShield</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/esicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/esicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/globalwarming logo180.png">
+	<link rel="icon" sizes="192x192" href="images/globalwarming logo.png">
+	<script>
+		function change(no) {
+			let text = ["sample text 1", "sample text 2", "sample text 3", "sample text 4"] // add text here
+			document.getElementById("demo").innerHTML = text[no - 1];
+		}
+	</script>
+</head>
+
+<body>
+
+	<div id="container">
+		<header>
+			<a href="index.html"><img src="images/earthshieldlogo.png" alt="EarthShield Logo" /></a>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="help.html">How to Help</a></li>
+				<li><a href="facts.html">Global Warming Facts</a></li>
+				<li><a href="link.html">Links</a></li>
+			</ul>
+		</nav>
+
+		<!-- <div id="hero" class="tablet-desktop">
+				 <img src="images/heroimgplaceholder.jpg" alt="hand holding melting earth"/> 
+			</div> -->
+		<div class="mainearth">
+			<div class="globe">
+				<img class="earth"
+					src="data:image/jpeg;base64,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"
+					alt="Snow" />
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/962px-Person_icon_BLACK-01.svg.png"
+					class="btn" id="locone" onclick="change(1)" />
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/962px-Person_icon_BLACK-01.svg.png"
+					class="btn" id="loctwo" onclick="change(2)" />
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/962px-Person_icon_BLACK-01.svg.png"
+					class="btn" id="locthree" onclick="change(3)" />
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/962px-Person_icon_BLACK-01.svg.png"
+					class="btn" id="locfour" onclick="change(4)" />
 			</div>
-			
-			<main>
-				<div>
-					<h1>Welcome to EarthShield</h1>
-					<p>We are a nonprofit website dedicated to spreading awareness about climate change, an issue that's currently plaguing our beloved Earth.</p>
-					<p>Here, you will find some tips on how to live a better, eco-friendly lifestyle, links to official resources, as well as ways you can help stall this ongoing process.</p>
-					<p>Climate change is a real problem which can be scientifically proven. Our planet is heating up at an unnatural pace, and if we continue to stay ignorant about this issue, there may no longer be an Earth for us to inhabit in the near future.</p>
-					<h3>Let us all come together to be the shield that helps our Earth see a brighter future!</h3>
-					
-					<img src="images/earthrotate.gif" alt="Earth Rotating"/>
-					<br />
-					
-					
-					<div class="grid">
-						<figure class="frame">
-							<a href="help.html"><img src="images/ecopower.jpg" alt="ecofriendly power"></a>
-							 <figcaption class="pic-text">How you can Help</figcaption>
-						</figure>
-						
-						<figure class="frame">
-							<a href="facts.html"><img src="images/earthwarm.jpg" alt="global warming"></a>
-							 <figcaption class="pic-text">Climate Change Facts</figcaption>
-						</figure>
-						
-						<figure class="frame">
-							<a href="link.html"><img src="images/grey-connected-earth.jpg" alt="earth being connected"></a>
-							 <figcaption class="pic-text">Other Resources</figcaption>
-						</figure>
-					</div>
-					<br />
-					
-					
-					<h2>About the Webmasters</h2>
-					<section id="about" class="grid">
-						<section id="about1">
-							<h3>yo</h3>
-							<img src="images/webmaster1.jpg" alt="a basic weemo"/>
-							<p>Hey, I'm Kenny. I'm currently a freshman studying Computer Science. I've been delving in HTML, JavaScript, and CSS for 3 years now, and I believe it's now time to use those skills to push forward a cause I believe in. In my free time, I play video games and practice playing music. For more information, feel free to check out my <a href="https://kennyluongest.blogspot.com/">blog!</a></p>
-						</section>
-						
-						<section id="about2">
-							<h3>ahhhh</h3>
-							<p>also human also human also human also human also human also human also human also human also human also human also human also human also human also human also human also human also human also human also human </p>
-						</section>
-					</section>
-				</div>
-			</main>
-			
-			<footer>
-				<p>&#169; Copyright 2022. All Rights Reserved.</p>
-			</footer>
+			<p id="demo">Click on one of the location to see what happening</p>
 		</div>
-	</body>
+
+		<main>
+			<div>
+				<h1>Welcome to EarthShield</h1>
+				<p>We are a nonprofit website dedicated to spreading awareness about climate change, an issue that's
+					currently plaguing our beloved Earth.</p>
+				<p>Here, you will find some tips on how to live a better, eco-friendly lifestyle, links to official
+					resources, as well as ways you can help stall this ongoing process.</p>
+				<p>Climate change is a real problem which can be scientifically proven. Our planet is heating up at an
+					unnatural pace, and if we continue to stay ignorant about this issue, there may no longer be an
+					Earth for us to inhabit in the near future.</p>
+				<h3>Let us all come together to be the shield that helps our Earth see a brighter future!</h3>
+
+				<img src="images/earthrotate.gif" alt="Earth Rotating" />
+				<br />
+
+
+				<div class="grid">
+					<figure class="frame">
+						<a href="help.html"><img src="images/ecopower.jpg" alt="ecofriendly power"></a>
+						<figcaption class="pic-text">How you can Help</figcaption>
+					</figure>
+
+					<figure class="frame">
+						<a href="facts.html"><img src="images/earthwarm.jpg" alt="global warming"></a>
+						<figcaption class="pic-text">Climate Change Facts</figcaption>
+					</figure>
+
+					<figure class="frame">
+						<a href="link.html"><img src="images/grey-connected-earth.jpg" alt="earth being connected"></a>
+						<figcaption class="pic-text">Other Resources</figcaption>
+					</figure>
+				</div>
+				<br />
+
+
+				<h2>About the Webmasters</h2>
+				<section id="about" class="grid">
+					<section id="about1">
+						<h3>yo</h3>
+						<img src="images/webmaster1.jpg" alt="a basic weemo" />
+						<p>Hey, I'm Kenny. I'm currently a freshman studying Computer Science. I've been delving in
+							HTML, JavaScript, and CSS for 3 years now, and I believe it's now time to use those skills
+							to push forward a cause I believe in. In my free time, I play video games and practice
+							playing music. For more information, feel free to check out my <a
+								href="https://kennyluongest.blogspot.com/">blog!</a></p>
+					</section>
+
+					<section id="about2">
+						<h3>Wilson Lu</h3>
+						<img src="images/webmaster2.png" alt="wilson pfp" />
+						<p>Hello there, I am Wilson. I am also a freshman majoring in Computer Science. I tinker with
+							code and build website for a few years. I am putting my skills to the test with a cause to
+							help. For more information, take a look <a href="https://wilsonlunyc.blogspot.com/">here!
+								</a< /p>
+					</section>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<p>&#169; Copyright 2022. All Rights Reserved.</p>
+		</footer>
+	</div>
+</body>
+
 </html>
