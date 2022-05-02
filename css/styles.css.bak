@@ -1,233 +1,353 @@
 body, header, nav, main, footer, h1, div, img, ul, section, figure, figcaption {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
-	background-color:#5C9AB5;
-	font-size: 1.15em;
+  background-color: #5c9ab5;
+  font-size: 1.15em;
 }
 
 img {
-	max-width: 100%;
-	display: block;
-	border-radius: 7px;
+  max-width: 100%;
+  display: block;
+  border-radius: 7px;
 }
 
 .round {
-	border-radius: 15px;
-	width: 75%;
+  border-radius: 15px;
+  width: 75%;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
-	top: 0;
+  top: 0;
 }
 
 footer {
-	text-align: center;
-	padding: 0 1em;
+  text-align: center;
+  padding: 0 1em;
 }
 
 nav {
-	padding: 1%;
-	margin-bottom: 1%;
+  padding: 1%;
+  margin-bottom: 1%;
 }
-	
+
 nav ul {
-	list-style-type: none;
-	text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
-	
+
 nav li {
-	border-top: 1px solid #267318;
-	font-size: 1.75em;
-	font-family: 'Fjalla One';
+  border-top: 1px solid #267318;
+  font-size: 1.75em;
+  font-family: "Fjalla One";
 }
-	
+
 nav li a {
-	display: block;
-	padding: 0.5em 1em;
-	text-decoration: none;
-	color: #394381;
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #394381;
 }
 
 /*Mobile rules*/
 .mobile {
-	display: block;
+  display: block;
 }
 
 .tablet-desktop {
-	display: none;
+  display: none;
 }
 
 main {
-	background-color:#fff;
-	padding: 2%;
-	font-family: 'Lato';
+  background-color: #fff;
+  padding: 2%;
+  font-family: "Lato";
 }
 
 main h2 {
-	text-align: center;
-	font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 main h3 {
-	text-align: center;
+  text-align: center;
 }
 
 main img {
-	margin-left: auto;
-	margin-right: auto;
-	width: 43%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 43%;
 }
 
 main ul {
-	margin: 0 0 4% 4%;
+  margin: 0 0 4% 4%;
 }
 
 .frame {
-	position: relative;\
-	margin: 2% auto;
+  position: relative;
+  margin: 2% auto;
 }
 
 .pic-text {
-	position: absolute;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.5);
-	color: #90e8a4;
-	width: 100%;
-	padding: 20px;
-	text-align: center;
-	font-size: 1.5em;
-	font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #90e8a4;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 #about {
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-	border-radius: 15px;
-	background-color: #f2f2f2;
-	padding: 1% 2%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  padding: 1% 2%;
 }
 
 #mobilehelpimg {
-	text-align:center;
-	width: 100%;
+  text-align: center;
+  width: 100%;
 }
-	
+
+#facts li {
+	font-weight:bold;
+	font-size: 1.5em;
+}
+
+#facts img {
+	width:100%;
+	text-align:left;
+}
+
+iframe {
+	width: 83%;
+	height: 250px;
+}
+
+/* Main Earth Info */
+.mainearth {
+  display: block;
+}
+
+.mainearth .globe .earth {
+  width: 100%;
+  height: auto;
+}
+
+.mainearth .btn {
+  position: absolute;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+#locone {
+  top: 80%;
+  left: 15%;
+}
+
+#loctwo {
+  top: 80%;
+  left: 55%;
+}
+
+#locthree {
+  top: 100%;
+  left: 35%;
+}
+
+#locfour {
+  top: 100%;
+  left: 65%;
+}
+
 /*Tablet rules*/
-@media screen and (min-width: 630px),print {
-	
-	.tablet-desktop {
-		display: block;
-	}
-	
-	.mobile {
-		display: none;
-	}
-	
-	.grid {
-		display: grid;
-		grid-template-columns: auto auto auto;
-		grid-gap: 10px;
-	}
-	
-	
+@media screen and (min-width: 630px), print {
+  .tablet-desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+  }
+
+  #locone {
+    top: 90%;
+    left: 15%;
+  }
+
+  #loctwo {
+    top: 90%;
+    left: 55%;
+  }
+
+  #locthree {
+    top: 130%;
+    left: 35%;
+  }
+
+  #locfour {
+    top: 130%;
+    left: 65%;
+  }
 }
 
 /*Desktop rules*/
-@media screen and (min-width: 769px),print {
-	
-	header {
-		width: 25%;
-		float: left;
-		padding-bottom: 0;
-	}
-	
-	nav {
-		float: center;
-		margin: 4em 1em 0 0;
-	}
-	
-	nav ul {
-		list-style-type: none;
-		text-align: center;
-	}
-	
-	nav li {
-		display: inline-block;
-		border: none;
-	}
-	
-	nav li a:hover {
-		color: #fff;
-		border: 3px solid white; 
-	}
-	
-	main {
-		clear: left;
-	}
+@media screen and (min-width: 769px), print {
+  header {
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+  }
 
-	main h1 {
-		font-size: 2.5em;
+  nav {
+    float: center;
+    margin: 4em 1em 0 0;
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  nav li {
+    display: inline-block;
+    border: none;
+  }
+
+  nav li a:hover {
+    color: #fff;
+    border: 3px solid white;
+  }
+
+  main {
+    clear: left;
+  }
+
+  main h1 {
+    font-size: 2.5em;
+  }
+
+  main h4 {
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  .frame:hover {
+    box-shadow: 8px 8px 10px #808080;
+  }
+
+  #hero img {
+    width: 100%;
+    height: 700px;
+  }
+
+  #about img {
+    width: 25%;
+  }
+
+  #about1,
+  #about2 {
+  }
+
+  #transport,
+  #power,
+  #nutrition {
+    margin: 0 2%;
+    width: 29%;
+    float: left;
+    font-size: 1.05em;
+  }
+
+  #helpimg {
+    display: inline-block;
+    text-align: center;
+  }
+	
+	iframe {
+		width: 56%;
+		height: 400px;
 	}
 	
-	main h4 {
-		text-align: left;
-		font-size: 1.5em;
-	}
-	
-	.frame:hover {
-		box-shadow: 8px 8px 10px #808080;
-	}
-	
-	#hero img {
-		width: 100%;
-		height: 700px;
-	}
-	
-	#about img {
-		width: 25%;
-	}
-	
-	#about1, #about2 {
-		
-	}
-	
-	#transport, #power, #nutrition {
-		margin: 0 2%;
-		width: 29%;
-		float: left;
+	#facts {
 		font-size: 1.05em;
 	}
 	
-	#helpimg {
-		display: inline-block;
-		text-align:center;
+	#facts img {
+		width:70%;
+		text-align:left;
 	}
+  
+  /* Earth Info */
+  .mainearth {
+    display: flex;
+  }
 
+  .mainearth .globe {
+    width: 50%;
+  }
+
+  .mainearth .btn {
+    width: 5%;
+  }
+
+  #locone {
+    top: 30%;
+    left: 15%;
+  }
+
+  #loctwo {
+    top: 30%;
+    left: 25%;
+  }
+
+  #locthree {
+    top: 45%;
+    left: 12%;
+  }
+
+  #locfour {
+    top: 45%;
+    left: 20%;
+  }
 }
 
 /*Large desktop nav rules*/
 @media screen and (min-width: 1043px) {
-	nav {
-		float: right;
-		margin: 4em 1em 0 0;
-	}
-	
-	nav ul {
-		text-align: right;
-	}
+  nav {
+    float: right;
+  }
+
+  nav ul {
+    text-align: right;
+  }
+
+  .mainearth {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1921px) {
-	#container {
-		width: 1920px;
-		margin: 0 auto;
-	}	
+  #container {
+    width: 1920px;
+    margin: 0 auto;
+  }
 }

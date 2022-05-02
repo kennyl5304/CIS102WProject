@@ -35,7 +35,29 @@
 			<main>
 				
 					<p>Climate Change, or Global Warming as some have dubbed it, is an ongoing issue referring to the gradual heating of the Earth's climate. Since the Industrial Revolution, our planet has been heating up due to human actions. Primarily due to the burning of fossil fuels in factories, greenhouse gas levels have increased in the atmosphere. With the development of gas emitting automobiles and electricity, Earth's atmosphere is heating up at a rapid pace.</p>
-				
+					
+					<p>Unfortunately, this pressing issue also has some of the most vocal detractors. There are many who would discredit climate change, claiming it's a myth that was created by the government. There are numerous facts, resources, and statistics to validate the issue. Climate change is real and it will only become more prevalent if citizens don't educate themselves on it's severity.</p>
+					
+					<p>Below are five basic facts about the issue known as Global Warming.</p>
+					<br />
+					
+					<br />
+					<div id=facts>
+						<ol>
+							<li>The Reality of Climate Change</li> <br />
+							<img src="images/tempchart.png" alt="chart showing upwards trend in temperature"/>
+							<p>There are some who continue to deny the existence of climate change. This issue isn't a myth. It's fact, and it can be backed up with scientific statistics. As shown in the chart above, global temperatures have been increasing since the 19th century, most likely due to the rise in factories emerging at the end of the century from the industrial revolution. It can't be denied that whether we like it or not, the Earth IS warming up at a rapid rate. </p><br />
+							
+							<li>Rising Sea Levels</li> <br />
+							<img src="images/risingsea.jpg" alt="town flooded"/>
+							<p>One of the biggest effects of global warming is rising sea levels. As a major effect of global warming is the melting of glaciers, sea levels are tied directly to climate change. The rate of rising sea levels have substantially increased in the last few years. Some scientists have predicted that coastal cities such as Atlantic City or even New York could be submerged by the turn of the next century if climate change isn't halted.</p> <br />
+							
+							<li>Many researchers have made predictions about the Earth's dark future</li> <br />
+							<iframe src="https://www.youtube.com/embed/-eVdksZHqpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<p>The future of humanity and the Earth has been a subject of discussion among scientists and researchers worldwide. Many worry that with the continuing ignorance and lack of action towards this issue, the Earth may be heading towards an early death. It's predicted that the Earth will warm up by at least 8 degrees by 2100. Another effect on the planet would be the thawing of ice. Areas such as the Arctic and Alaska will begin to warm and decrease in glacier amounts. The video above details a timelapse of the potential changes to our planet.</p>
+
+						</ol>
+					</div>
 			</main>
 			
 			<footer>

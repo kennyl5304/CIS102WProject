@@ -120,6 +120,21 @@ main ul {
   width: 100%;
 }
 
+#facts li {
+	font-weight:bold;
+	font-size: 1.5em;
+}
+
+#facts img {
+	width:100%;
+	text-align:left;
+}
+
+iframe {
+	width: 83%;
+	height: 250px;
+}
+
 /* Main Earth Info */
 .mainearth {
   display: block;
@@ -266,7 +281,21 @@ main ul {
     display: inline-block;
     text-align: center;
   }
-
+	
+	iframe {
+		width: 56%;
+		height: 400px;
+	}
+	
+	#facts {
+		font-size: 1.15em;
+	}
+	
+	#facts img {
+		width:70%;
+		text-align:left;
+	}
+  
   /* Earth Info */
   .mainearth {
     display: flex;
