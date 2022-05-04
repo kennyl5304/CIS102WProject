@@ -1,4 +1,15 @@
-body, header, nav, main, footer, h1, div, img, ul, section, figure, figcaption {
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul,
+section,
+figure,
+figcaption {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,7 +25,50 @@ img {
   display: block;
   border-radius: 7px;
 }
+/* Main Earth Info */
+.mainearth {
+  display: block;
+}
 
+#earthtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.con {
+  max-width: 100%;
+  position: relative;
+}
+
+.ppl {
+  cursor: pointer;
+  position: absolute;
+  width: 5%;
+}
+
+.ppl1 {
+  top: 35%;
+  left: 40%;
+}
+
+.ppl2 {
+  top: 35%;
+  right: 38%;
+}
+
+.ppl3 {
+  bottom: 30%;
+  left: 50%;
+}
+
+.ppl4 {
+  bottom: 30%;
+  left: 60%;
+}
+img {
+  width: 100%;
+}
 .round {
   border-radius: 15px;
   width: 75%;
@@ -121,56 +175,18 @@ main ul {
 }
 
 #facts li {
-	font-weight:bold;
-	font-size: 1.5em;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 #facts img {
-	width:100%;
-	text-align:left;
+  width: 100%;
+  text-align: left;
 }
 
 iframe {
-	width: 83%;
-	height: 250px;
-}
-
-/* Main Earth Info */
-.mainearth {
-  display: block;
-}
-
-.mainearth .globe .earth {
-  width: 100%;
-  height: auto;
-}
-
-.mainearth .btn {
-  position: absolute;
-  color: white;
-  border: none;
-  cursor: pointer;
-  width: 10%;
-}
-
-#locone {
-  top: 80%;
-  left: 15%;
-}
-
-#loctwo {
-  top: 80%;
-  left: 55%;
-}
-
-#locthree {
-  top: 100%;
-  left: 35%;
-}
-
-#locfour {
-  top: 100%;
-  left: 65%;
+  width: 83%;
+  height: 250px;
 }
 
 /*Tablet rules*/
@@ -188,59 +204,46 @@ iframe {
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
   }
-	
-	table {
-		border: 1px solid #000;
-		border-collapse: collapse;
-		margin: 0 auto;
-		width: 100%;
-	}
-	
-	caption {
-		font-size: 1.5em;
-		font-weight: bold;
-		padding: 1%;
-	}
-	
-	th, td {
-		border: 1px solid #000;
-		padding: 2%;
-	}
-	
-	th {
-		background-color: #242e42;
-		color: #fff;
-		font-size: 1.15em;
-	}
-	
-  #locone {
-    top: 90%;
-    left: 15%;
+
+  table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
   }
 
-  #loctwo {
-    top: 90%;
-    left: 55%;
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
   }
 
-  #locthree {
-    top: 130%;
-    left: 35%;
+  th,
+  td {
+    border: 1px solid #000;
+    padding: 2%;
   }
 
-  #locfour {
-    top: 130%;
-    left: 65%;
+  th {
+    background-color: #242e42;
+    color: #fff;
+    font-size: 1.15em;
   }
-  
-  #about1, #about2 {
-	  line-height: 1.5;
+
+  #about1,
+  #about2 {
+    line-height: 1.5;
   }
-  
+
 }
 
 /*Desktop rules*/
 @media screen and (min-width: 769px), print {
+  /* Earth */
+  .mainearth {
+    display: flex;
+  }
+
   header {
     width: 25%;
     float: left;
@@ -306,67 +309,34 @@ iframe {
     display: inline-block;
     text-align: center;
   }
-	
-	iframe {
-		width: 56%;
-		height: 400px;
-	}
-	
-	#facts {
-		font-size: 1.15em;
-	}
-	
-	#facts img {
-		width:70%;
-		text-align:left;
-	}
-  
-  /* Earth Info */
-  .mainearth {
-    display: flex;
+
+  iframe {
+    width: 56%;
+    height: 400px;
   }
 
-  .mainearth .globe {
-    width: 50%;
+  #facts {
+    font-size: 1.15em;
   }
 
-  .mainearth .btn {
-    width: 5%;
-  }
-
-  #locone {
-    top: 30%;
-    left: 15%;
-  }
-
-  #loctwo {
-    top: 30%;
-    left: 25%;
-  }
-
-  #locthree {
-    top: 45%;
-    left: 12%;
-  }
-
-  #locfour {
-    top: 45%;
-    left: 20%;
+  #facts img {
+    width: 70%;
+    text-align: left;
   }
 }
 
 /*Large desktop nav rules*/
 @media screen and (min-width: 1043px) {
+  /* Earth */
+  .mainearth {
+    display: block;
+  }
   nav {
     float: right;
   }
 
   nav ul {
     text-align: right;
-  }
-
-  .mainearth {
-    display: block;
   }
 }
 
