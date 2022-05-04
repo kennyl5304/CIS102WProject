@@ -243,6 +243,9 @@ iframe {
   .mainearth {
     display: flex;
   }
+  .con {
+    padding-top: 2px;
+  }
 
   header {
     width: 25%;
@@ -331,9 +334,9 @@ iframe {
   .mainearth {
     display: block;
   }
-  nav {
+  /* nav {
     float: right;
-  }
+  } */
 
   nav ul {
     text-align: right;
