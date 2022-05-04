@@ -232,6 +232,11 @@ iframe {
     top: 130%;
     left: 65%;
   }
+  
+  #about1, #about2 {
+	  line-height: 1.5;
+  }
+  
 }
 
 /*Desktop rules*/
@@ -286,10 +291,6 @@ iframe {
 
   #about img {
     width: 25%;
-  }
-
-  #about1,
-  #about2 {
   }
 
   #transport,
